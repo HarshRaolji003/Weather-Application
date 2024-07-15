@@ -11,7 +11,7 @@ search.addEventListener('click',()=>{
     if (city === '')
         return;
     
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${APIKey}&q=${city}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=${APIKey}&q=${city}&aqi=no`)
     .then(response => response.json())
     .then(json => {
 
